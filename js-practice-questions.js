@@ -53,6 +53,20 @@ function removeDuplicates(array) {
 
 // console.log(removeDuplicates([3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3]));
 
+// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in the upper case.
+function toUpCase(str) {
+  let arr = str.split(` `);
+  let answer = [];
+  for (let i = 0; i < arr.length; i++) {
+    let newArr = arr[i].split(``);
+    newArr[0] = newArr[0].toUpperCase();
+    let res = newArr.join(``);
+    answer.push(res);
+  }
+  return answer.join(` `);
+}
+console.log(toUpCase(`i love you`));
+
 // Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 
 function longestWord(StringValue) {
