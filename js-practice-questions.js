@@ -16,6 +16,27 @@ function f(a, b, c, d) {
 }
 //console.log(f(1, 2, 3, 4, 5));
 
+// Create function that will return all the most repeated element.
+let array = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+function a(arr1) {
+  let mf = 1;
+  let m = 0;
+  let item;
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = i; j < arr1.length; j++) {
+      if (arr1[i] == arr1[j]) m++;
+      if (mf < m) {
+        mf = m;
+        item = arr1[i];
+      }
+    }
+    m = 0;
+  }
+  return item;
+}
+
+console.log(a(array));
+
 // Write a function which will remove all repeated items of array.
 
 function removeDuplicates(array) {
