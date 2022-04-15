@@ -97,6 +97,9 @@ function a(arr1) {
 
 //console.log(a(array));
 
+
+// Write a JavaScript function that checks if the given string includes the given substring.
+
 function testStr(str, substr) {
   let arr = str.split(substr);
   if (arr.length > 1) {
